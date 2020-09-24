@@ -1,0 +1,390 @@
+/*Обнуление*/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+html{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+*,*::before,*::after{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: "NerisThin";
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+@font-face {
+font-family: 'NEXT ART Regular';
+font-style: normal;
+font-weight: normal;
+src: local('NEXT ART Regular'), url('NEXT ART_Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'NEXT ART Bold';
+font-style: normal;
+font-weight: normal;
+src: local('NEXT ART Bold'), url('NEXT ART_Bold.woff') format('woff');
+}
+
+body{
+	font-family: "NEXT ART Regular";
+	color: #fff;
+
+}
+
+
+
+.wrapper-full{
+	width: 100%;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+
+
+
+/* header style start   */
+
+.header {
+	background: #575757;
+	top: 0;
+	left: 0;
+	flex-wrap: wrap;
+	width: 100%;
+	max-height: 80px;
+	padding-bottom: 20px;
+	z-index: 999;
+	border-bottom: 1px solid #fff;
+}
+
+.header__nav {
+}
+.header__list {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.header__item {
+	padding-right: 139px;
+}
+
+.header__item:last-child {
+	padding-right: 0;
+}
+
+.header__link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/* header style end   */
+
+/* welcome style start   */
+
+
+.welcome {
+	height: 722px;
+    background-size: cover;
+    padding-top: 360px;
+	background: url("../img/weclome.jpg") no-repeat center;
+	background-attachment: fixed;	
+	text-align: center;
+}
+
+.weclome_main_text{
+	font-size: 30px;
+}
+
+.weclome_second_text{
+	font-size: 16px;
+}
+
+
+/* welcome style end   */
+
+
+/* skils style start   */
+
+.skils {
+	background: #373833;
+	text-align: center;
+}
+
+.skils__titel {
+	padding-top: 35px;
+	text-align: center;
+
+	font-size: 22px;
+	padding-bottom: 70px;
+}
+
+.skils_element {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+.progremmer_title{
+	font-size: 20px;
+}
+
+.web_title{
+	font-size: 20px;
+}
+
+.progremmer__list {
+	padding-left: 70px;
+	padding-top: 70px;
+	padding-bottom: 116px;
+}
+.progremmer__list_item {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 22px;
+	padding-bottom: 73px;
+}
+
+.bar_main {
+	margin: 0 30px;
+	width: 50%;
+	height: 20px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	border-radius: 25px;
+	padding: 2px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.bar_second, .bar_second1, .bar_second2, .bar_second3 {
+	display: block;
+	height: 16px;
+	width: 50%;
+	border-radius: 20px;
+	background: linear-gradient( rgb(43,194,83) 37%, rgb(84,240,84) 69%);
+	box-shadow: 
+	inset 0 2px 9px  rgba(255,255,255,0.3),
+	inset 0 -2px 6px rgba(0,0,0,0.4);
+	overflow: hidden;
+}
+
+.bar_second1{
+	width: 70%;
+}
+.bar_second2{
+	width: 60%;
+}
+
+.bar_second3{
+	width: 80%;
+}
+
+.item_text{
+	width: 70px;
+	font-size: 18px;
+}
+
+
+/* skils style end   */
+
+
+/* interactive style start   */
+
+
+.interactive {
+	background: #575757;
+	padding-bottom: 86.6px;
+}
+.interactive__titel {
+	padding-top: 35px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.interactive__main {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+
+.interactive__list {
+	padding-top: 200px;
+	grid-column: span 1;
+	text-align: center;
+
+}
+.interactive__list_item {
+	font-size: 18px;
+	padding-bottom: 105px;
+}
+.intercative__site {
+	grid-column: span 2;
+
+}
+.interactive__list_item input{
+	padding-right: 10px;
+}
+
+.interactive__block {
+	padding-top: 200px;
+}
+
+
+/* interactive style end   */
+
+
+
+/* price style start   */
+
+
+.price {
+	background: #373833;
+}
+.price__title {
+	padding-top: 35px;
+    text-align: center;
+    font-size: 22px;
+}
+.price__main {
+	padding-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+    column-gap:	30px;
+
+}
+.price__main_column {
+	min-height: 565px;
+	text-align: center;
+	background: #A0A0A0;
+	margin-bottom: 49.4px;
+}
+
+.price__column_titel1, .price__column_titel2, .price__column_titel3 {
+	font-size: 18px;
+	padding-top: 64px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #000;
+	margin: 0 40px;
+}
+
+.price__column_number{
+	padding-top: 30px;
+	font-size: 18px;
+}
+
+/* price style end   */
+
+/* portfolio style start   */
+
+.portfolio_item-1 {
+	background: #575757;
+}
+.portfolio_item-2{
+	background: #373833;
+	padding-top: 50px;
+}
+
+.portfolio_item-3{
+	background: #575757;
+	padding-top: 50px;
+}
+
+.portfolio_item-4{
+	background: #373833;
+	padding-top: 50px;
+}
+
+.portfolio__titel {
+	padding-top: 35px;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 90px;
+}
+.project__titel {
+	font-size: 18px;
+	max-width: 440px;
+	padding-bottom: 5px;
+}
+.portfolio__project{
+	padding: 0 90px;
+}
+
+.project__art {
+	margin-bottom: 30px;
+}
+
+.project__footer {
+	font-size: 18px;
+	color: #A0A0A0;
+	padding-bottom: 80px;
+}
+
+/* portfolio style end   */
+
+
+/* footer style start   */
+
+.contact {
+	background: #575757;
+}
+
+
+.contact__titel {
+	padding-top: 35px;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 35px;
+}
+
+.contact__icon{
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	padding-bottom: 35px;
+}
+
+/* footer style end   */
