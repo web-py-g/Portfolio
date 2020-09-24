@@ -7,6 +7,8 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="web-developer, web, веб-программист, веб, верстка сайтов, спб">
 	<link rel="stylesheet"  href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -15,9 +17,9 @@
 
 	
 	<div class="wrapper-full">
-		<div class="welcome">
+		<div class="welcome" id="home">
 			<div class="weclome_second_text"><p>Здравствуйте, меня зовут Глеб! И я</p></div>
-			<h1 class="weclome_main_text"><b>Full Stack Web Developer</b></h1>
+			<h1 class="weclome_main_text"><b>web-разработчик</b></h1>
 			<div class="weclome_second_text"><p>занимаюсь программированием порядка 5 лет. 
 			Буду рад помочь вам в создании вашего сайта!</p></div>
 		</div>
@@ -28,17 +30,17 @@
 		<div class="wrapper">	
 			<nav class="header__nav">
 				<ul class="header__list">
-					<li class="header__item"><a href="#!" class="header__link">Главная</a></li>
-					<li class="header__item"><a href="#!" class="header__link">Навыки</a></li>
-					<li class="header__item"><a href="#!" class="header__link">Прайс</a></li>
-					<li class="header__item"><a href="#!" class="header__link">Работы</a></li>
-					<li class="header__item"><a href="#!" class="header__link">Контакты</a></li>
+					<li class="header__item"><a href="#home" class="header__link">Главная</a></li>
+					<li class="header__item"><a href="#skils" class="header__link">Навыки</a></li>
+					<li class="header__item"><a href="#price" class="header__link">Прайс</a></li>
+					<li class="header__item"><a href="#work" class="header__link">Работы</a></li>
+					<li class="header__item"><a href="#contact" class="header__link">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<section class="skils">
+	<section class="skils" id="skils">
 		<div class="wrapper">
 			<h2 class="skils__titel">
 				Мои навыки
@@ -51,26 +53,40 @@
 
 					<ul class="progremmer__list">
 						<li class="progremmer__list_item">
-							<p class="item_text">C#</p>  <div class="bar_main"> 
-									<span class="bar_second1"></span>
-								</div>   
-							70%
+							<p class="item_text">C#</p>
+								<div class="skill_bar">
+						          <div class="skill_per" per="60">
+						            <span class="value"></span>
+						          </div>						          
+						        </div>
+						    60%
 						</li>
 						<li class="progremmer__list_item">
-							<p class="item_text">c++</p> <div class="bar_main"> 
-									<span class="bar_second2"></span>
-								</div>   
+							<p class="item_text">c++</p> 
+								<div class="skill_bar">
+						          <div class="skill_per" per="60">
+						            <span class="value"></span>
+						          </div>						          
+						        </div>
 							60%
 						</li>
 						<li class="progremmer__list_item">
-							<p class="item_text">python</p> <div class="bar_main"> 
-									<span class="bar_second"></span>
-								</div>   
-							50%</li>
+							<p class="item_text">python</p> 
+								<div class="skill_bar">
+						          <div class="skill_per" per="50">
+						            <span class="value"></span>
+						          </div>						          
+						        </div> 
+							50%
+						</li>
+
 						<li class="progremmer__list_item">
-							<p class="item_text">java</p> <div class="bar_main"> 
-									<span class="bar_second"></span>
-								</div>   
+							<p class="item_text">java</p> 
+								<div class="skill_bar">
+						          <div class="skill_per" per="50">
+						            <span class="value"></span>
+						          </div>						          
+						        </div>  
 							50%
 						</li>
 					</ul>				
@@ -80,26 +96,39 @@
 					<h2 class="web_title">web-developer skils</h2>
 					<ul class="progremmer__list">
 						<li class="progremmer__list_item">
-							<p class="item_text">html</p>  <div class="bar_main"> 
-									<span class="bar_second3"></span>
-								</div>   
+							<p class="item_text">html</p>  
+								<div class="skill_bar">
+						          <div class="skill_per" per="80">
+						            <span class="value"></span>
+						          </div>						          
+						        </div>  
 							80%
 						</li>
 						<li class="progremmer__list_item">
-							<p class="item_text">css</p> <div class="bar_main"> 
-									<span class="bar_second1"></span>
-								</div>   
-							70%</li>
+							<p class="item_text">css</p> 
+								<div class="skill_bar">
+						          <div class="skill_per" per="70">
+						            <span class="value"></span>
+						          </div>						          
+						        </div>  
+							70%
+						</li>
 						<li class="progremmer__list_item">
-							<p class="item_text">js</p> <div class="bar_main"> 
-									<span class="bar_second"></span>
-								</div>   
+							<p class="item_text">js</p> 
+								<div class="skill_bar">
+						          <div class="skill_per" per="50">
+						            <span class="value"></span>
+						          </div>						          
+						        </div>  
 							50%
 						</li>
 						<li class="progremmer__list_item">
-							<p class="item_text">sql</p> <div class="bar_main"> 
-									<span class="bar_second"></span>
-								</div>   
+							<p class="item_text">sql</p> 
+								<div class="skill_bar">
+						          <div class="skill_per" per="50">
+						            <span class="value"></span>
+						          </div>						          
+						        </div>  
 							50%
 						</li>
 					</ul>					
@@ -145,7 +174,7 @@
 		</div>
 	</section>
 
-	<section class="price">
+	<section class="price" id="price">
 		<div class="wrapper">
 			<h2 class="price__title">
 				Мой прайс
@@ -169,7 +198,7 @@
 
 
 					<p class="price__column_number">
-						от 4000₽
+						от 8000₽
 					</p>
 
 
@@ -181,7 +210,7 @@
 
 
 					<p class="price__column_number">
-						от 4000₽
+						от 12000₽
 					</p>
 
 				</article>
@@ -191,7 +220,7 @@
 	</section>
 
 
-	<section class="portfolio_item-1">
+	<section class="portfolio_item-1" id="work">
 		<div class="wrapper">
 			
 			<h2 class="portfolio__titel">
@@ -271,7 +300,7 @@
 		</div>
 	</section>
 
-<footer class="contact">
+<footer class="contact" id="contact">
 	<div class="wrapper">
 		<h4 class="contact__titel">
 			контакты
@@ -293,6 +322,8 @@
 
 	</div>
 </footer>
+  	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="./js/main.js"></script>
 
 </body>
 </html>
