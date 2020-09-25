@@ -102,8 +102,6 @@ body{
 	border-bottom: 1px solid #fff;
 }
 
-.header__nav {
-}
 .header__list {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -127,6 +125,12 @@ body{
 	text-decoration: none;
 	font-size: 18px;
 }
+
+.sticky__header{
+	position: fixed;
+}
+
+
 
 /* header style end   */
 
@@ -389,15 +393,8 @@ body{
 	background: #575757;
 }
 
-
-.contact__titel {
-	padding-top: 35px;
-    text-align: center;
-    font-size: 22px;
-    padding-bottom: 35px;
-}
-
 .contact__icon{
+	padding-top: 50px;
 	text-align: center;
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
@@ -405,3 +402,31 @@ body{
 }
 
 /* footer style end   */
+
+/* sroll style start   */
+
+
+.scroll-up {
+    position: fixed;
+    z-index: 999;
+    bottom: 25px;
+    right: 25px;
+}
+
+.scroll-up-link {
+    background-color: rgba(135, 135, 135, 0.5);
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    border-radius: 10px;
+    transition: all 2s ease-in-out 2s;
+}
+
+.fa-angle-up:before {
+	font-size: 10px;
+    content: 'up';
+}
+/* sroll style end   */
