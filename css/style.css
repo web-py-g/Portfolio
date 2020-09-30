@@ -69,6 +69,7 @@ src: local('NEXT ART Bold'), url('NEXT ART_Bold.woff') format('woff');
 }
 
 body{
+	height: 100%;
 	font-family: "NEXT ART Regular";
 	color: #fff;
 
@@ -88,10 +89,37 @@ body{
 
 
 
+
+
+/* welcome style start   */
+
+
+.welcome {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+	background: url("../img/weclome.jpg") no-repeat center;
+	background-attachment: fixed;	
+	text-align: center;
+}
+
+.weclome_main_text{
+	font-size: 30px;
+}
+
+.weclome_second_text{
+	font-size: 18px;
+}
+
+
+/* welcome style end   */
+
 /* header style start   */
 
 .header {
-	background: #575757;
+	background: #918D8A;
 	top: 0;
 	left: 0;
 	flex-wrap: wrap;
@@ -127,6 +155,7 @@ body{
 }
 
 .sticky__header{
+	top: 0;
 	position: fixed;
 }
 
@@ -134,28 +163,66 @@ body{
 
 /* header style end   */
 
-/* welcome style start   */
+.empty__active{
+	height: 80px;
+}
+
+/* about me style start   */
+
+.about-me {
+	background: #575757;
 
 
-.welcome {
-	height: 722px;
-    background-size: cover;
-    padding-top: 360px;
-	background: url("../img/weclome.jpg") no-repeat center;
-	background-attachment: fixed;	
+}
+.about-me__titel {
+	padding-top: 100px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.about-me__desc {
+
+}
+
+.about-me__description {
+	text-align: center;
+	font-size: 18px;
+	padding-top: 25px;
+	line-height: 20px;
+}
+
+.about-me__main {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+
+}
+
+.facts{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.small__facts{
+	margin-right: 60px;
+	padding-top: 100px;
+	list-style: disc;
+
+}
+.small__facts:last-child{
+	margin-right: 0;
+}
+
+
+.me{
+	padding: 40px 0;
 	text-align: center;
 }
-
-.weclome_main_text{
-	font-size: 30px;
+.me-img{
+	max-height: 500px;
 }
-
-.weclome_second_text{
-	font-size: 18px;
-}
+/* about me style end   */
 
 
-/* welcome style end   */
 
 
 /* skils style start   */
@@ -164,9 +231,8 @@ body{
 	background: #373833;
 	text-align: center;
 }
-
 .skils__titel {
-	padding-top: 35px;
+	padding-top: 50px;
 	text-align: center;
 
 	font-size: 22px;
@@ -195,20 +261,6 @@ body{
 	flex-wrap: wrap;
 	font-size: 22px;
 	padding-bottom: 73px;
-}
-
-.bar_second, .bar_second1, .bar_second2, .bar_second3 {
-	display: block;
-	height: 16px;
-	width: 50%;
-	position: absolute;
-	border-radius: 20px;
-	background: linear-gradient( rgb(43,194,83) 37%, rgb(84,240,84) 69%);
-	box-shadow: 
-	inset 0 2px 9px  rgba(255,255,255,0.3),
-	inset 0 -2px 6px rgba(0,0,0,0.4);
-	overflow: hidden;
-
 }
 
 .skill_bar{
@@ -411,8 +463,12 @@ body{
     z-index: 999;
     bottom: 25px;
     right: 25px;
-}
+	opacity: 0;
 
+}
+.scroll__active{
+	opacity: 1;
+}
 .scroll-up-link {
     background-color: rgba(135, 135, 135, 0.5);
     display: block;
