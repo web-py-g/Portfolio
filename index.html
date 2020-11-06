@@ -15,23 +15,23 @@
 	
 	<div class="wrapper-full">
 		<div class="welcome" id="home">
-			<div class="weclome_second_text"><p>Здравствуйте, меня зовут Глеб! И я</p></div>
-			<h1 class="weclome_main_text"><b>web-разработчик</b></h1>
-			<div class="weclome_second_text"><p>занимаюсь программированием порядка 5 лет. 
+			<div class="weclome_second_text _anim__items _anim__no"><p>Здравствуйте, меня зовут Глеб! И я</p></div>
+			<h1 class="weclome_main_text _anim__items _anim__no"><b>web-разработчик</b></h1>
+			<div class="weclome_second_text _anim__items _anim__no"><p>занимаюсь программированием порядка 5 лет. 
 			Буду рад помочь вам в создании вашего сайта!</p></div>
 		</div>
 		
 	</div>
 
-	<header class="header">
+	<header id="header" class="header">
 		<div class="wrapper">	
 			<nav class="header__nav">
 				<ul class="header__list">
-					<li class="header__item"><a href="#home" class="header__link">Главная</a></li>
-					<li class="header__item"><a href="#skils" class="header__link">Навыки</a></li>
-					<li class="header__item"><a href="#price" class="header__link">Прайс</a></li>
-					<li class="header__item"><a href="#work" class="header__link">Работы</a></li>
-					<li class="header__item"><a href="#contact" class="header__link">Контакты</a></li>
+					<li class="header__item "><a href="#home" class="header__link js-scroll">Главная</a></li>
+					<li class="header__item"><a href="#skils" class="header__link js-scroll">Навыки</a></li>
+					<li class="header__item"><a href="#price" class="header__link js-scroll">Прайс</a></li>
+					<li class="header__item"><a href="#work" class="header__link js-scroll">Работы</a></li>
+					<li class="header__item"><a href="#contact" class="header__link js-scroll">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -45,20 +45,22 @@
 		<div class="wrapper">
 			<div class="about-me__main">
 				<div class="about-me__desc">
-					<h2 class="about-me__titel">
+					<h2 class="about-me__titel _anim__items anim_main _anim__no">
 						Обо мне
 					</h2>
-					<p class="about-me__description">
+					<p class="about-me__description _anim__items anim_main _anim__no">
 						Меня зовут Глеб, я студент Санкт-Петербурского ИТМО, в целом занимаюсь программированием уже более 5 лет и <strong>я обожаю web-программирование</strong>.<br>
 						Ощущение от того, что ты сам своими руками сделал какой-то красивый сайт, который полностью работает и им пользуются люди - незабываемо.
 						Главное получать от своего дела удовльствие, а именно это я получаю, когда делаю ваши сайты!
 					</p>
 
 					<ul class="facts">
-						<li class="small__facts">Есть кошка</li>
-						<li class="small__facts">Люблю мармелад</li>
-						<li class="small__facts">Живу в Питере</li>
-						<li class="small__facts">ИТМО</li>
+						<li class="small__facts _anim__items anim_main _anim__no"> в хороших отношениях со всеми клиентами </li>
+						<li class="small__facts _anim__items anim_main _anim__no">Учусь в ИТМО</li>
+						<li class="small__facts _anim__items anim_main _anim__no">Делаю все в кротчайщие сроки</li>
+						<li class="small__facts _anim__items anim_main _anim__no">Живу в Питере</li>
+						<li class="small__facts _anim__items anim_main _anim__no">есть Телеграм бот</li>
+
 					</ul>
 
           		
@@ -72,40 +74,34 @@
 
 	<section class="skils" id="skils">
 		<div class="wrapper">
-			<h2 class="skils__titel">
+			<h2 class="skils__titel _anim__items anim_main _anim__no">
 				Мои навыки
 			</h2>
 
 			<div class="skils_element">
 				
 				<div class="element__programmer">
-					<h2 class="progremmer_title">Programming skills</h2>
+					<h2 class="progremmer_title _anim__items anim_main _anim__no">Programming skills</h2>
 
 					<ul class="progremmer__list">
 						<li class="progremmer__list_item">
 							<p class="item_text">C#</p>
-								<div class="skill_bar">
-						          <div class="skill_per" per="60">
-						            <span class="value"></span>
-						          </div>						          
+								<div class="skill_bar ">
+						          <div class="skill_per _anim__items" per="70"></div>						          
 						        </div>
-						    60%
+						    70%
 						</li>
 						<li class="progremmer__list_item">
 							<p class="item_text">c++</p> 
 								<div class="skill_bar">
-						          <div class="skill_per" per="60">
-						            <span class="value"></span>
-						          </div>						          
+						          <div class="skill_per" per="60"></div>						          
 						        </div>
 							60%
 						</li>
 						<li class="progremmer__list_item">
 							<p class="item_text">python</p> 
 								<div class="skill_bar">
-						          <div class="skill_per" per="50">
-						            <span class="value"></span>
-						          </div>						          
+						          <div class="skill_per" per="50"></div>						          
 						        </div> 
 							50%
 						</li>
@@ -113,9 +109,7 @@
 						<li class="progremmer__list_item">
 							<p class="item_text">java</p> 
 								<div class="skill_bar">
-						          <div class="skill_per" per="50">
-						            <span class="value"></span>
-						          </div>						          
+						          <div class="skill_per" per="50"></div>						          
 						        </div>  
 							50%
 						</li>
@@ -123,41 +117,33 @@
 				</div>
 
 				<div class="element_web">
-					<h2 class="web_title">web-developer skils</h2>
+					<h2 class="web_title _anim__items anim_main _anim__no">web-developer skils</h2>
 					<ul class="progremmer__list">
 						<li class="progremmer__list_item">
 							<p class="item_text">html</p>  
 								<div class="skill_bar">
-						          <div class="skill_per" per="80">
-						            <span class="value"></span>
-						          </div>						          
+						          <div class="skill_per" per="80"></div>						          
 						        </div>  
 							80%
 						</li>
 						<li class="progremmer__list_item">
 							<p class="item_text">css</p> 
 								<div class="skill_bar">
-						          <div class="skill_per" per="70">
-						            <span class="value"></span>
-						          </div>						          
+						          <div class="skill_per" per="70"></div>						          
 						        </div>  
 							70%
 						</li>
 						<li class="progremmer__list_item">
 							<p class="item_text">js</p> 
 								<div class="skill_bar">
-						          <div class="skill_per" per="50">
-						            <span class="value"></span>
-						          </div>						          
+						          <div class="skill_per" per="50"></div>						          
 						        </div>  
 							50%
 						</li>
 						<li class="progremmer__list_item">
 							<p class="item_text">sql</p> 
 								<div class="skill_bar">
-						          <div class="skill_per" per="50">
-						            <span class="value"></span>
-						          </div>						          
+						          <div class="skill_per" per="50"></div>						          
 						        </div>  
 							50%
 						</li>
@@ -177,11 +163,11 @@
 			<div class="interactive__main">
 				
 				<div class="interactive__list">
-					<ul>
-						<li class="interactive__list_item"><input type="checkbox" name="val1" value="html">HTML</li>
-						<li class="interactive__list_item"><input type="checkbox" name="val2" value="css">css</li>
-						<li class="interactive__list_item"><input type="checkbox" name="val3" value="js">js</li>
-
+					<ul class="ineractive_checkbox">
+						<li class="interactive__list_item"><input checked disabled class="checkbox" type="checkbox" name="val1" id="html" value="html"><label for="html">html</label></li>
+						<li class="interactive__list_item"><input class="checkbox" type="checkbox" name="val2" id="css" value="css"><label for="css">css</label></li>
+						<li class="interactive__list_item"><input class="checkbox" type="checkbox" name="val3" id="js" value="js"><label for="js">js</label></li>
+						<li class="interactive__list_item"><input class="checkbox" type="color" name="valc" id="cc" value="cc"><label for="cc">cc: </label></li>
 
 					</ul>
 				</div>
@@ -189,15 +175,22 @@
 
 				<div class="intercative__site">
 					<div class="interactive__block">
-						<code><pre>
-							&lt;class Program
-							{
-						        static void Main(string[] args)
-						        {
-						            Console.WriteLine("Hello World!");
-								}
-							}&gt;</pre>
-						</code>
+						
+						<div class="interactive__html">
+							<img src="" alt="" class="interactive__html-img">
+						</div>
+
+						<div class="interactive__css">
+							<img src="" alt="" class="interactive__css-img">
+							
+						</div>
+
+
+						<div class="interactive__js">
+							<img src="" alt="" class="interactive__js-img">
+							
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -211,40 +204,184 @@
 			</h2>
 
 			<div class="price__main">
+				<article class="price__main_column">
+					<div class="first__front__side"> 
+						<h3 class="price__column_titel _anim__items anim_main _anim__no">
+							Одностраничный сайт
+						</h3>
+
+						<p class="price__column_number _anim__items anim_main _anim__no">
+							от 3000₽
+						</p>
+						<div class="price_descr">
+							<ul class="price_descr_list">
+								<li class="price_descr_item _anim__items anim_main _anim__no">Время создания 1-3 дня</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Помощь с хостингом и доменом</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Доработка / частичная переработка сайта в течении 1 недели бесплатно</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">подключение к cms</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Настройка форм</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Адаптивность</li>
+
+
+							</ul>
+
+						</div>
+					</div>
+
+
+					<div class="first__back__side">
+						<div class="bg">
+							<div class="link__popup__form">
+								<a href="#popup-form" class="contact__form_link">Сделать заказ!</a>
+
+							</div>
+							
+						</div>
+					</div>
+
+
+				</article>
+				<article class="price__main_column">
+					<div class="second__front__side">
+						<h3 class="price__column_titel _anim__items anim_main _anim__no">
+							Многостраничный сайт
+						</h3>
+
+
+						<p class="price__column_number _anim__items anim_main _anim__no">
+							от 6000₽
+						</p>
+
+						<div class="price_descr">
+							<ul class="price_descr_list">
+								<li class="price_descr_item _anim__items anim_main _anim__no">Время создания 2-4 дня</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Автоматический релиз постов</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Помощь с хостингом и доменом</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Доработка / частичная переработка сайта в течении 1 недели бесплатно</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">подключение к cms</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Настройка форм</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Адаптивность</li>
+
+
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="second__back__side">
+						<div class="bg">
+							<div class="link__popup__form">
+								<a href="#popup-form" class="contact__form_link">Сделать заказ!</a>
+
+							</div>
+							
+						</div>
+					</div>
+
+
+
+				</article>
+				<article class="price__main_column">
+					<div class="third__front__side">
+						<h3 class="price__column_titel _anim__items anim_main _anim__no">
+							интернет-магазин
+						</h3>
+
+
+						<p class="price__column_number _anim__items anim_main _anim__no">
+							от 10000₽
+						</p>
+
+						<div class="price_descr">
+							<ul class="price_descr_list">
+								<li class="price_descr_item _anim__items anim_main _anim__no">Время создания 3-5 дней</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Подключение к базе данных</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Удобная админ панель для работы с товарами</li>												
+								<li class="price_descr_item _anim__items anim_main _anim__no">Помощь с хостингом и доменом</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Доработка / частичная переработка сайта в течении 1 недели бесплатно</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">подключение к cms</li>
+								<li class="price_descr_item _anim__items anim_main _anim__no">Адаптивность</li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="third__back__side">
+						<div class="bg">
+							<div class="link__popup__form">
+								<a href="#popup-form" class="contact__form_link">Сделать заказ!</a>
+
+							</div>
+						
+						</div>
+					</div>
+
+
+				</article>
+
+			</div>
+		</div>
+	</section>
+
+
+	<div id="popup-form" class="popup__form">
+			<a href="#header" class="popup__form_area"></a>
+			<div class="popup__form_body">
+				<div class="popup__form_conect">
+					<a href="#header" class="popup__form_close">X</a>
+					<div class="popup__form_title">
+					
+						<h3>Мои контакты:</h3>
+
+							
+						
+
+					</div>
+					
+				</div>
+			</div>
+	</div>
+
+
+
+
+
+	<section class="contact_me">
+
+		<div class="wrapper">
+
+			<div class="hello">
 				
-				<article class="price__main_column">
-					<h3 class="price__column_titel1">
-						Одностраничный сайт
-					</h3>
+				<a href="#popup" class="contact_link">Напиши мне !</a>
 
-					<p class="price__column_number">
-						от 4000₽
-					</p>
-				</article>
-				<article class="price__main_column">
-					<h3 class="price__column_titel2">
-						Многостраничный сайт
-					</h3>
+			</div>
 
+		</div>
 
-					<p class="price__column_number">
-						от 8000₽
-					</p>
+		<div id="popup" class="popup">
+			<a href="#header" class="popup_area"></a>
+			<div class="popup_body">
+				<div class="popup_conect">
+					<a href="#header" class="popup_close">X</a>
+					<div class="popup__title">
+					
+						<h3>Мои контакты:</h3>
+							
+						<div class="contact__icon">
+				
+							<a href="https://vk.com/id175090628" target="_blank"><img src="img/png/icon-vk.png" alt="vk" class="icon3"></a>
 
+							<a href="https://www.instagram.com/web_py_g/" target="_blank"><img src="img/png/icon-inst.png" alt="instagram" class="icon2"></a>
 
-				</article>
-				<article class="price__main_column">
-					<h3 class="price__column_titel3">
-						интернет-магазин
-					</h3>
+							<a href="https://github.com/web-py-g" target="_blank"><img src="img/png/icon-git.png" alt="github" class="icon1"></a>
 
+							<a href="https://t.me/WebWordP" target="_blank"><img src="img/png/icon-teleg.png" alt="telegram" class="icon4"></a>
 
-					<p class="price__column_number">
-						от 12000₽
-					</p>
+						</div>
 
-				</article>
-
+					</div>
+					
+				</div>
 			</div>
 		</div>
 	</section>
@@ -330,17 +467,55 @@
 		</div>
 	</section>
 
+
+	<section class="feedback">
+		<div class="wrapper">
+
+			<h2 class="feedback__titel">
+				Отзывы:
+			</h2>
+
+			<div class="feedback__list">
+
+				<div class="feedback__element">
+					<img src="img/ekat.jpg" alt="" class="feedback__element__img">
+					<h4 class="feedback__name"> Екатерина Сафиулина</h4>
+					<h5 class="feedback__type"> интернет-магазин</h5>
+					<div class="feedback__comment">
+						<p class="feedback__text">
+							Глеб! Это прекрасно наш сайт просто великолепен! Там так красиво, стильно и уютно- это именно то, что хотелось! Спасибо вам за ваши старания буду обращаться только к вам
+						</p>
+					</div>
+				</div>
+				<div class="feedback__element">
+					<img src="" alt="" class="feedback__element__img">
+					2
+				</div>
+				<div class="feedback__element">
+					<img src="" alt="" class="feedback__element__img">
+					3
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
 	<footer class="contact" id="contact">
 		<div class="wrapper">
 			
 
 			<div class="contact__icon">
 				
-				<a href="https://github.com/web-py-g" target="_blank"><img src="img/png/icon-git.png" alt="github" class="icon1"></a>
+				<a href="https://vk.com/id175090628" target="_blank"><img src="img/png/icon-vk.png" alt="vk" class="icon3"></a>
 
 				<a href="https://www.instagram.com/web_py_g/" target="_blank"><img src="img/png/icon-inst.png" alt="instagram" class="icon2"></a>
 
-				<a href="https://vk.com/id175090628" target="_blank"><img src="img/png/icon-vk.png" alt="vk" class="icon3"></a>
+				<a href="https://github.com/web-py-g" target="_blank"><img src="img/png/icon-git.png" alt="github" class="icon1"></a>
 
 				<a href="https://t.me/WebWordP" target="_blank"><img src="img/png/icon-teleg.png" alt="telegram" class="icon4"></a>
 
@@ -350,7 +525,7 @@
 	</footer>
 
 	<div class="scroll-up" style="display: block;">
-		<a href="#home" class="scroll-up-link scrollto"><i class="fa fa-angle-up"></i></a>
+		<a href="#home" class="scroll-up-link scrollto js-scroll"><p class="fa fa-angle-up"></p></a>
 	</div>
 
   	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
