@@ -1,12 +1,10 @@
-$(function(){
+function skil_bar(){
   $(".skill_per").each(function(){
     $this = $(this);
     var per = $(this).attr("per");
     $this.css("width", per + "%");
   });
-});
-
-
+};
 
 const animItems = document.querySelectorAll('._anim__items');
 
@@ -49,11 +47,6 @@ if(animItems.length > 0){
 
 
 
-
-
-
-
-
 (function () {
 
     const smoothScroll = function (targetEl, duration) {
@@ -63,11 +56,11 @@ if(animItems.length > 0){
         let startPosition = window.pageYOffset;
         let startTime = null;
     
-        const ease = function(t,b,c,d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t + b;
-            t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
+        const ease = function(time,start,target,dur) {
+            time /= dur / 2;
+            if (time < 1) return target / 2 * time * time + start;
+            time--;
+            return -target / 2 * (time * (time - 2) - 1) + start;
         };
     
         const animation = function(currentTime){
@@ -87,6 +80,7 @@ if(animItems.length > 0){
             each.addEventListener('click', function () {
                 const currentTarget = this.getAttribute('href');
                 smoothScroll(currentTarget, 1000);
+
             });
         });
     };
@@ -102,6 +96,15 @@ if(animItems.length > 0){
     const empty = document.querySelector('.empty__block');
 
     window.onscroll = () => {
+        if(window.pageYOffset > 1200){
+            skil_bar();
+        }
+
+
+
+
+
+
         if(window.pageYOffset > 725){
 
             scroll.classList.add('scroll__active')
