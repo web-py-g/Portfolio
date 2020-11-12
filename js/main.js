@@ -6,6 +6,8 @@ function skil_bar(){
   });
 };
 
+
+
 const animItems = document.querySelectorAll('._anim__items');
 
 if(animItems.length > 0){
@@ -96,16 +98,12 @@ if(animItems.length > 0){
     const empty = document.querySelector('.empty__block');
 
     window.onscroll = () => {
-        if(window.pageYOffset > 1200){
+        if(window.pageYOffset > (window.innerHeight)*1.8){
             skil_bar();
         }
 
 
-
-
-
-
-        if(window.pageYOffset > 725){
+        if(window.pageYOffset > window.innerHeight){
 
             scroll.classList.add('scroll__active')
             header.classList.add('sticky__header')
