@@ -241,7 +241,7 @@ body{
 
 }
 .small__facts:first-child{
-	margin-right: 85px;
+	margin-right: 45px;
 }
 .small__facts:last-child{
 	margin-right: 0;
@@ -382,9 +382,7 @@ body{
 	grid-template-columns: repeat(3,1fr);
 }
 
-.interactive__header{
-	animation-name: header_interactive;
-	animation-duration: 1s; 
+.interactive__header{	
 	width: 100%;
 	position: absolute;
 	border: 1px solid black;
@@ -399,20 +397,15 @@ body{
 }
 
 
-.interactive__header__titel__block{
-/*	animation-name: header_interactive;
-	animation-duration: 1s; */
-
-}
 
 .main__left__item{
-	animation-name: header_interactive;
 	animation-duration: 1s;
 
 	margin-top: 60px;
 }
 
 .main__figure {
+
 	margin: 60px 15px 0px 15px;
 	border: 2px solid #A0A0A0;
 	height: 330px;
@@ -420,11 +413,13 @@ body{
 }
 
 .shapes {
+
 	display: flex;
 	flex-wrap: wrap;
 
 }
 .shape1 {
+
 	height: 55px;
 	width: 55px;
 	background-color: #C4C4C4;
@@ -556,6 +551,131 @@ body{
 	background-color: darkgrey;
 }
 
+.for__interactive__js:target .interactive__header__titel{
+	animation: header_interactive 2s linear infinite alternate;
+	
+}
+
+@keyframes header_interactive {
+	0%{
+		padding-left: 80px;
+	}
+	100%{
+		padding-left: 470px;
+	}
+}
+@keyframes figure__interactive1 {
+	0%{
+		background-color: #BD017D;
+	}
+	100%{
+		background-color: #0185a3;
+	}
+}
+@keyframes figure__interactive2 {
+	0%{
+		background-color: #37B70A;
+	}
+	100%{
+		background-color: #da1539;
+	}
+}
+@keyframes figure__interactive3 {
+	0%{
+		background-color: #F0FFB4;
+	}
+	100%{
+		background-color: #15da76;
+	}
+}
+@keyframes figure__interactive4 {
+	0%{
+		background-color: #4EA69B;
+	}
+	100%{
+		background-color: #d7da15;
+	}
+}
+@keyframes figure__interactive5 {
+	0%{
+		background-color: #4200FF;
+	}
+	100%{
+		background-color: #7315da;
+	}
+}
+@keyframes figure__interactive6 {
+	0%{
+		background-color: #6966F8;
+	}
+	100%{
+		background-color: #650000;
+	}
+}
+
+
+
+.for__interactive__js:target .interactive__header{
+	border: 0px;
+}
+
+.for__interactive__js:target .one{
+	animation: figure__interactive1 2s linear infinite alternate;	
+	transition: 0.5s;
+
+}
+.for__interactive__js:target .two{
+	animation: figure__interactive2 2s linear infinite alternate;	
+	background-color: #37B70A;
+	transition: 0.5s;
+
+}
+.for__interactive__js:target .three{
+	animation: figure__interactive3 2s linear infinite alternate;	
+	background-color: #F0FFB4;
+	transition: 0.5s;
+
+}
+.for__interactive__js:target .four{
+	animation: figure__interactive4 2s linear infinite alternate;	
+	background-color: #4EA69B;
+	transition: 0.5s;
+
+}
+.for__interactive__js:target .five{
+	animation: figure__interactive5 2s linear infinite alternate;	
+	background-color: #4200FF;
+	transition: 0.5s;
+
+}
+.for__interactive__js:target .six{
+	animation: figure__interactive6 2s linear infinite alternate;	
+	background-color: #6966F8;
+	transition: 0.5s;
+
+}
+.for__interactive__js:target .interactive__block{
+	background-color: #b7b6b666;
+	transition: 0.5s;
+
+}
+.for__interactive__js:target .main__figure{
+	background-color: #AA4646;
+	transition: 0.5s;
+}
+
+.for__interactive__js:target .interactive__header__titel{
+	background-color: #A0A0A0;
+	transition: 0.5s;
+
+}
+
+
+
+
+
+
+
 .intercative__site:target .main__figure{
 	background-color: #AA4646;
 	transition: 0.5s;
@@ -566,22 +686,6 @@ body{
 	transition: 0.5s;
 
 }
-
-
-.for__interactive__js:target .interactive__header__titel{
-	
-}
-
-@keyframes header_interactive {
-	0%{
-		left: 0px;
-	}
-	100%{
-		left: 500px;
-	}
-}
-
-
 
 .intercative__site:target .interactive__header{
 	border: 0px;
@@ -819,7 +923,9 @@ body{
 	font-size: 24px;
 }
 
-
+.dop_content1{
+	color: black;
+}
 
 
 
@@ -866,10 +972,16 @@ body{
 	transition: all 0.5s ease 0s;
 }
 
-.popup:target {
+/*.popup:target {
+	opacity: 1;
+	visibility: visible;
+}*/
+
+.popup__active {
 	opacity: 1;
 	visibility: visible;
 }
+
 
 .popup:target .popup_conect{
 	opacity: 1;
@@ -928,43 +1040,79 @@ body{
 }
 .project__titel {
 	text-align: center;
-	font-size: 18px;
-	padding-bottom: 10px;
+	font-size: 16px;
+	padding-bottom: 20px;
 }
 
-.portfolio_item-1 {
+.portfolio_items {
 	background: #575757;
 }
-.portfolio_item-2{
-	background: #373833;
-	padding-top: 50px;
-}
 
-.portfolio_item-3{
-	background: #575757;
-	padding-top: 50px;
-}
 
-.portfolio_item-4{
-	background: #373833;
-	padding-top: 50px;
-}
-
-.portfolio__project{
+.portfolio__projects{
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
 	text-align: center;
+	column-gap: 20px;
 }
 
-.project__art {
-	margin-bottom: 30px;
+.project__art1 {
+	margin-bottom: 20px;
+	width: 375px;
+	height: 255px;
+}
+.project__art2 {
+	margin-bottom: 20px;
+	width: 375px;
+	height: 255px;
+}
+.project__art3 {
+	margin-bottom: 20px;
+	width: 375px;
+	height: 255px;
 }
 
 .project__footer {
-	margin-left: 120px;
 	text-align: left;
-	font-size: 18px;
+	font-size: 16px;
 	color: #A0A0A0;
 	padding-bottom: 80px;		
 }
+
+.portfolio__item_1{
+	grid-column: span 2;
+
+}
+
+.portfolio__item_2{
+	grid-column: span 2;
+		
+}
+
+.portfolio__item_3{
+	grid-column: span 2;
+	
+}
+
+
+
+.popup__image {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	opacity: 0.5;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.5s ease 0s;
+}
+
+/*.popup__image:target {
+	opacity: 1;
+	visibility: visible;
+}*/
 
 
 
@@ -974,7 +1122,7 @@ body{
 /* feedback style start   */
 
 .feedback{
-	background: #575757;
+	background: #373833;
 	min-height: 300px;
 	text-align: center;
 }
@@ -990,13 +1138,31 @@ body{
 	padding-top: 40px;
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
+	column-gap: 10px;
 }
 
-.feedback__element__img{
-	max-height: 100px;
-	max-width: 100px;
+.feedback__img__block{
+	margin: auto;
+	background: url(../img/ekat2.jpg) 50% 50% no-repeat;;
+	height: 125px;
+	width: 125px;
 	border-radius: 50%;
 }
+.feedback__img__block2{
+	margin: auto;
+	background: url(../img/Lera3.jpg) 50% 50% no-repeat;;
+	height: 125px;
+	width: 125px;
+	border-radius: 50%;
+}
+.feedback__img__block3{
+	margin: auto;
+	background: url(../img/ekat2.jpg) 50% 50% no-repeat;;
+	height: 125px;
+	width: 125px;
+	border-radius: 50%;
+}
+
 .feedback__name{
 	font-size: 16px;
 	padding-top: 10px;
@@ -1022,7 +1188,7 @@ body{
 /* footer style start   */
 
 .contact {
-	background: #373833;
+	background: #575757;
 }
 
 .contact__icon{
