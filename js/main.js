@@ -97,13 +97,11 @@ if(animItems.length > 0){
 
     window.onscroll = () => {
         if(window.pageYOffset > (window.innerHeight)*1.8){
-            // console.log(window.innerHeight)
             skil_bar();
         }
 
 
         if(window.pageYOffset > window.innerHeight){
-            // console.log(window.innerHeight)
             
             scroll.classList.add('scroll__active')
             header.classList.add('sticky__header')
@@ -126,15 +124,9 @@ var openPopup = document.querySelector('.contact_link');
 var closePopup = popup.querySelector('.popup_close');
 var closeArea = popup.querySelector('.popup_area');
 
-var k = 0;
-
 openPopup.addEventListener('click', function() {
-    k+=1;
-    popup.classList.add('popup__active');
-    if (k == 3) {
-        console.log(occurrences);
 
-    }
+    popup.classList.add('popup__active');
 });
 
 
@@ -145,45 +137,3 @@ closePopup.addEventListener('click', function() {
 closeArea.addEventListener('click', function(){
     popup.classList.remove('popup__active');
 });
-
-
-
-// var popupIMG = document.querySelector('.popup__image');
-// var openPopupIMG = document.querySelector('.popup__image__link')
-// var closePopupIMG = popupIMG.querySelector('.popup__image_close')
-// var closeAreaIMG = popupIMG.querySelector('.popup__image_area')
-
-
-// openPopupIMG.addEventListener('click', function() {
-//     popupIMG.classList.add('popup__image__active');
-// });
-
-// closePopupIMG.addEventListener('click', function() {
-//     popupIMG.classList.remove('popup__image__active');
-// });
-
-// closeAreaIMG.addEventListener('click', function(){
-//     popupIMG.classList.remove('popup__image__active');
-// });
-
-
-
-
-
-
-
-var all = document.getElementsByTagName('*')[0];
-
-
-var small = []
- for (var i = 0; i < document.getElementsByTagName('*').length -1; i++){
-    small.push((jQuery(all.getElementsByTagName('*')[i]).prop("tagName")));
-}
-
-var occurrences = {};
-
-for (var i = 0, j = small.length; i < j; i++) {
-   occurrences[small[i]] = (occurrences[small[i]] || 0) + 1;
-}
-
-
