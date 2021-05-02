@@ -480,6 +480,9 @@ body{
 	grid-column: span 2;
 
 }
+#mc{
+	width: 100%;
+}
 .intercative__site {
 	padding-top: 100px;
 }
@@ -686,249 +689,23 @@ body{
 	background-color: darkgrey;
 }
 
-.for__interactive__js:target .interactive__header__titel{
-	-webkit-animation: header_interactive 2s linear infinite alternate;
-	        animation: header_interactive 2s linear infinite alternate;
-	
+.for__interactive__js:target .intercative__site{
+	display: none;
 }
-
-@-webkit-keyframes header_interactive {
-	0%{
-	}
-	100%{
-	}
+.snake, .snake__titel{
+	display: none;
 }
-
-@keyframes header_interactive {
-	0%{
-	}
-	100%{
-	}
+.for__interactive__js:target .snake__titel{
+	display: block;
+	margin-top: 70px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 30px;
 }
-@-webkit-keyframes figure__interactive1 {
-	0%{
-		
-	}
-	100%{
-
-		margin-left: 195px;
-	}
+.for__interactive__js:target .snake{
+	display: block;
+	background-color: #000;
 }
-@keyframes figure__interactive1 {
-	0%{
-		
-	}
-	100%{
-
-		margin-left: 195px;
-	}
-}
-@-webkit-keyframes figure__interactive2 {
-	0%{
-	}
-	100%{
-		margin-left: -140px;
-	}
-}
-@keyframes figure__interactive2 {
-	0%{
-	}
-	100%{
-		margin-left: -140px;
-	}
-}
-@-webkit-keyframes figure__interactive3 {
-	0%{
-	}
-	100%{
-		-webkit-transform: rotate(90deg);
-		        transform: rotate(90deg);
-	}
-}
-@keyframes figure__interactive3 {
-	0%{
-	}
-	100%{
-		-webkit-transform: rotate(90deg);
-		        transform: rotate(90deg);
-	}
-}
-@-webkit-keyframes figure__interactive4 {
-	0%{
-	}
-	100%{
-		border-radius: 50%;
-	}
-}
-@keyframes figure__interactive4 {
-	0%{
-	}
-	100%{
-		border-radius: 50%;
-	}
-}
-@-webkit-keyframes figure__interactive5 {
-	0%{
-	}
-	100%{
-		width: 280px;
-	}
-}
-@keyframes figure__interactive5 {
-	0%{
-	}
-	100%{
-		width: 280px;
-	}
-}
-@-webkit-keyframes figure__interactive6 {
-	0%{
-	}
-	100%{
-		opacity: 0;
-		display: none;
-	}
-}
-@keyframes figure__interactive6 {
-	0%{
-	}
-	100%{
-		opacity: 0;
-		display: none;
-	}
-}
-@-webkit-keyframes figure__interactive7 {
-	0%{
-	}
-	100%{
-		width: 260px;
-	}
-}
-@keyframes figure__interactive7 {
-	0%{
-	}
-	100%{
-		width: 260px;
-	}
-}
-@-webkit-keyframes figure__interactive8 {
-	0%{
-	}
-	100%{
-		margin-left: 20px;
-		width: 70px;
-	}
-}
-@keyframes figure__interactive8 {
-	0%{
-	}
-	100%{
-		margin-left: 20px;
-		width: 70px;
-	}
-}
-
-
-.for__interactive__js:target .interactive__header{
-	border: 0px;
-}
-
-.for__interactive__js:target .one{
-	-webkit-animation: figure__interactive1 2s linear forwards;
-	        animation: figure__interactive1 2s linear forwards;
-	background-color: #BD017D;	
-	-webkit-transition: 0.5s;	
-	-o-transition: 0.5s;	
-	transition: 0.5s;
-
-}
-.for__interactive__js:target .two{
-	-webkit-animation: figure__interactive2 2s linear forwards;
-	        animation: figure__interactive2 2s linear forwards;	
-	background-color: #37B70A;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-
-}
-.for__interactive__js:target .three{
-	-webkit-animation: figure__interactive3 2s linear forwards;
-	        animation: figure__interactive3 2s linear forwards;	
-	background-color: #F0FFB4;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-
-}
-.for__interactive__js:target .four{
-	-webkit-animation: figure__interactive4 2s linear forwards;
-	        animation: figure__interactive4 2s linear forwards;	
-	background-color: #4EA69B;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-}
-.for__interactive__js:target .four .line{
-	-webkit-animation: figure__interactive8 2s linear forwards;
-	        animation: figure__interactive8 2s linear forwards;	
-	-webkit-transition: 0.5s;	
-	-o-transition: 0.5s;	
-	transition: 0.5s;
-}
-
-.for__interactive__js:target .five{
-	-webkit-animation: figure__interactive5 2s linear forwards;
-	        animation: figure__interactive5 2s linear forwards;	
-	background-color: #4200FF;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-}
-
-.for__interactive__js:target .five .line{
-	-webkit-animation: figure__interactive7 2s linear forwards;
-	        animation: figure__interactive7 2s linear forwards;	
-	-webkit-transition: 0.5s;	
-	-o-transition: 0.5s;	
-	transition: 0.5s;
-}
-
-.for__interactive__js:target .six{
-	-webkit-animation: figure__interactive6 2s linear forwards;
-	        animation: figure__interactive6 2s linear forwards;	
-	background-color: #6966F8;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-
-}
-.for__interactive__js:target .interactive__block{
-	background-color: #b7b6b666;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-
-}
-.for__interactive__js:target .main__figure{
-	background-color: #AA4646;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-}
-
-.for__interactive__js:target .interactive__header__titel{
-	background-color: #A0A0A0;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-
-}
-
-
-
-
-
-
 
 .intercative__site:target .main__figure{
 	background-color: #AA4646;
@@ -1564,6 +1341,9 @@ body{
 	.interactive__element, .interactive__element1 {
     	margin-left: 0;
 	}
+	.for__interactive__js:target .snake__titel{
+		font-size: 20px;
+	}
 	
 	@-webkit-keyframes figure__interactive1 {
 		0%{
@@ -1618,6 +1398,9 @@ body{
 	}
 }
 @media screen and (max-width: 908px) {
+	.for__interactive__js:target .snake__titel{
+		font-size: 18px;
+	}
 
 	.about-me__titel {
 	    font-size: 20px;
