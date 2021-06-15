@@ -171,15 +171,15 @@ body{
   position: absolute;
   bottom: 30px;
   left: calc(50% - 25px);
-  -webkit-animation: arrowDown 2s infinite;
-          animation: arrowDown 2s infinite;
+  -webkit-animation: arrowDown 1s infinite;
+          animation: arrowDown 1s infinite;
 }
 
 .arrow.two {
   opacity: 0;
   bottom: 50px;
-  -webkit-animation: arrowDown1 2s infinite;
-          animation: arrowDown1 2s infinite;
+  -webkit-animation: arrowDown1 1s infinite;
+          animation: arrowDown1 1s infinite;
 }
 
 @-webkit-keyframes arrowDown {
